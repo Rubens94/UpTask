@@ -1,0 +1,44 @@
+{
+  "name": "uptasknodejs",
+  "version": "1.0.0",
+  "description": "Proyecto UpTask con Node y MVC",
+  "main": "index.js",
+  "scripts": {
+    "desarrollo": "concurrently \"npm run dev \" \"npm run watch \"",
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js ",
+    "watch": "webpack -w --mode development"
+  },
+  "author": "Juan De la torre Valdez",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt-nodejs": "0.0.3",
+    "concurrently": "^4.1.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.16.4",
+    "express-session": "^1.17.2",
+    "html-to-text": "^8.0.0",
+    "juice": "^5.1.0",
+    "nodemailer": "^5.1.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.14",
+    "slug": "^0.9.4",
+    "sweetalert2": "^8.19.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "express-validator": "^6.11.1",
+    "mysql2": "^1.7.0",
+    "nodemon": "^1.18.9",
+    "pug": "^3.0.2",
+    "sequelize": "^6.6.2",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
